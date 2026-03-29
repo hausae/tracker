@@ -58,39 +58,14 @@ const D = (n) => {
 
 const SEED = {
   wallets: [
-    { id:"w1", name:"Cash",        emoji:"💵", type:"cash",    balance:2500,  color:"#43A047" },
-    { id:"w2", name:"BDO Savings", emoji:"🏦", type:"bank",    balance:45000, color:"#1565C0" },
-    { id:"w3", name:"GCash",       emoji:"📱", type:"ewallet", balance:3200,  color:"#0070EB" },
+    { id:"w1", name:"Cash",        emoji:"💵", type:"cash",    balance:0, color:"#43A047" },
+    { id:"w2", name:"Bank",        emoji:"🏦", type:"bank",    balance:0, color:"#1565C0" },
+    { id:"w3", name:"E-Wallet",    emoji:"📱", type:"ewallet", balance:0, color:"#0070EB" },
   ],
-  transactions: [
-    { id:"t1",  type:"expense", amount:250,   cat:"food",   walletId:"w1", note:"Lunch – Mang Inasal",   date:D(0)  },
-    { id:"t2",  type:"income",  amount:25000, cat:"salary", walletId:"w2", note:"March salary",          date:D(4)  },
-    { id:"t3",  type:"expense", amount:150,   cat:"trans",  walletId:"w1", note:"Grab to work",          date:D(1)  },
-    { id:"t4",  type:"expense", amount:1200,  cat:"shop",   walletId:"w2", note:"New headphones",        date:D(2)  },
-    { id:"t5",  type:"expense", amount:85,    cat:"food",   walletId:"w1", note:"Bo's Coffee",           date:D(2)  },
-    { id:"t6",  type:"expense", amount:500,   cat:"bills",  walletId:"w2", note:"Electric bill",         date:D(3)  },
-    { id:"t7",  type:"expense", amount:350,   cat:"health", walletId:"w1", note:"Vitamins + meds",       date:D(4)  },
-    { id:"t8",  type:"income",  amount:2000,  cat:"gift",   walletId:"w3", note:"Birthday money",        date:D(5)  },
-    { id:"t9",  type:"expense", amount:300,   cat:"fun",    walletId:"w3", note:"Netflix + Spotify",     date:D(6)  },
-    { id:"t10", type:"expense", amount:450,   cat:"food",   walletId:"w1", note:"Dinner with family",    date:D(7)  },
-    { id:"t11", type:"expense", amount:780,   cat:"shop",   walletId:"w2", note:"Clothes – SM",          date:D(8)  },
-    { id:"t12", type:"income",  amount:5000,  cat:"gift",   walletId:"w2", note:"Freelance payment",     date:D(9)  },
-  ],
-  budgets: [
-    { id:"b1", cat:"food",  limit:5000 },
-    { id:"b2", cat:"trans", limit:2000 },
-    { id:"b3", cat:"shop",  limit:3000 },
-    { id:"b4", cat:"bills", limit:5000 },
-  ],
-  goals: [
-    { id:"g1", name:"Emergency Fund", emoji:"🛡️", target:50000, saved:12000, deadline:"2026-12-31" },
-    { id:"g2", name:"New Laptop",      emoji:"💻", target:35000, saved:8500,  deadline:"2026-06-30" },
-    { id:"g3", name:"Japan Trip",      emoji:"✈️", target:80000, saved:22000, deadline:"2027-01-15" },
-  ],
-  debts: [
-    { id:"d1", name:"Marco",  direction:"owe",  amount:1500, due:"2026-04-15", done:false },
-    { id:"d2", name:"Kris",   direction:"owes", amount:800,  due:"2026-04-01", done:false },
-  ],
+  transactions: [],
+  budgets: [],
+  goals: [],
+  debts: [],
 };
 
 // ─── STORE HOOK ───────────────────────────────────────────────────────────────
